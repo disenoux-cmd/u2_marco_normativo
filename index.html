@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recurso interactivo sobre el marco curricular colombiano: Artículo 23, Lineamientos, EBC y DBA.">
+  <meta name="theme-color" content="#123b32">
+  <link rel="icon" href="docs/excolombia.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Familjen+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Planear con coherencia | Mapa curricular colombiano</title>
+</head>
+<body>
+  <!--
+  THESIS: El marco curricular se comprende recorriendo sus estratos conectados, no leyendo normas aisladas; se rechaza la cuadrícula de tarjetas educativas.
+  OWN-WORLD: Cartografía colombiana contemporánea en verde selva, amarillo solar y papel mineral; curvas topográficas, rutas y nodos son la interfaz.
+  STORY: El Eco se orienta, explora seis capas, comprueba una decisión de aula y transfiere lo aprendido a su bitácora.
+  FIRST VIEWPORT: Un relieve curricular ocupa el costado derecho; el título y la acción de entrada se anclan a la izquierda sobre un campo verde profundo.
+  FORM: Cartografía curricular estratificada, quinta dirección de la exploración; seed 100a675c.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+  -->
+  <a class="skip-link" href="#mapa">Saltar al mapa curricular</a>
+
+  <header class="topbar" aria-label="Navegación principal">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <img src="docs/exclombia-blanco.png" alt="Enseña por Colombia">
+    </a>
+    <div class="journey-status" aria-live="polite">
+      <span class="journey-label">Ruta explorada</span>
+      <span class="journey-count"><strong id="visited-count">0</strong> de 6 capas</span>
+      <span class="journey-track" aria-hidden="true"><span id="journey-fill"></span></span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="coordinate">4.5709° N · Una ruta para planear</p>
+        <h1 id="hero-title">Planear con coherencia:<br><span>el mapa curricular colombiano</span></h1>
+        <p class="hero-intro">¡Hola, Eco! Planear una clase es proyectar una ruta segura para que el aprendizaje suceda de forma equitativa. Explora las brújulas nacionales y descubre cómo usarlas para liberar tiempo para la indagación, la colaboración y la metacognición.</p>
+        <a class="primary-action" href="#mapa">
+          Trazar mi ruta
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <div class="hero-map" aria-hidden="true">
+        <svg class="contours" viewBox="0 0 720 720" role="img">
+          <path d="M89 402c-61-93 20-224 123-261 110-40 176 23 279 32 105 10 191 83 171 190-20 109-129 133-197 209-69 76-198 108-287 48-85-57-30-129-89-218Z"/>
+          <path d="M135 397c-43-70 13-171 96-197 91-29 145 25 227 30 87 5 152 62 134 145-19 87-105 102-159 163-56 64-157 82-226 35-66-45-24-109-72-176Z"/>
+          <path d="M192 390c-27-46 8-112 66-131 65-21 102 19 160 22 60 4 105 41 91 98-14 60-73 68-111 111-39 44-110 57-158 24-45-31-16-76-48-124Z"/>
+          <path d="M246 385c-14-26 7-66 40-77 37-13 58 10 91 12 35 2 60 23 52 56-8 34-42 39-63 63-23 25-63 32-90 13-26-17-10-43-30-67Z"/>
+        </svg>
+        <svg class="route-line" viewBox="0 0 720 720">
+          <path d="M120 532C223 492 167 389 282 365c104-22 90-118 177-119 74-1 83-66 137-83"/>
+        </svg>
+        <span class="map-marker marker-a"><i></i><b>Base legal</b></span>
+        <span class="map-marker marker-b"><i></i><b>Metas</b></span>
+        <span class="map-marker marker-c"><i></i><b>Aula</b></span>
+        <span class="compass"><span>N</span><i></i></span>
+        <p class="hero-note">Toda buena planeación<br>comienza por orientarse.</p>
+      </div>
+      <a class="scroll-cue" href="#mapa">Explorar el relieve <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="map-section" id="mapa" aria-labelledby="map-title">
+      <div class="map-heading">
+        <div>
+          <p class="coordinate dark">Mapa de relaciones · Selecciona cada nodo</p>
+          <h2 id="map-title">De la norma a la experiencia de aula</h2>
+        </div>
+        <p>Recorre las capas en el orden que prefieras. Cada una responde una pregunta distinta de la planeación y se conecta con la siguiente.</p>
+      </div>
+
+      <div class="curriculum-map">
+        <svg class="map-path" viewBox="0 0 1100 650" preserveAspectRatio="none" aria-hidden="true">
+          <path class="path-shadow" d="M92 541C223 565 241 417 370 435s111-177 245-141 172-120 300-164"/>
+          <path d="M92 541C223 565 241 417 370 435s111-177 245-141 172-120 300-164"/>
+          <path class="branch" d="M615 294c-7 115 57 171 169 220"/>
+        </svg>
+
+        <button class="map-node node-legal" type="button" data-topic="legal" aria-haspopup="dialog">
+          <span class="node-index">Base</span>
+          <span class="node-dot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 17h12M8 17V9m4 8V9m4 8V9M5 9h14L12 4 5 9Z"/></svg></span>
+          <span class="node-copy"><strong>Artículo 23</strong><small>¿Qué debemos garantizar?</small></span>
+        </button>
+
+        <button class="map-node node-guides" type="button" data-topic="guides" aria-haspopup="dialog">
+          <span class="node-index">Orientación</span>
+          <span class="node-dot"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="m15.5 8.5-2 5-5 2 2-5 5-2Z"/></svg></span>
+          <span class="node-copy"><strong>Lineamientos</strong><small>¿Hacia dónde miramos?</small></span>
+        </button>
+
+        <button class="map-node node-ebc" type="button" data-topic="ebc" aria-haspopup="dialog">
+          <span class="node-index">Meta</span>
+          <span class="node-dot"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><path d="M12 2v2m10 8h-2M12 22v-2M2 12h2"/></svg></span>
+          <span class="node-copy"><strong>EBC</strong><small>¿Qué calidad buscamos?</small></span>
+        </button>
+
+        <button class="map-node node-dba" type="button" data-topic="dba" aria-haspopup="dialog">
+          <span class="node-index">Peldaño</span>
+          <span class="node-dot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19h4v-4h4v-4h4V7h3M5 5v14h15"/></svg></span>
+          <span class="node-copy"><strong>DBA</strong><small>¿Qué aprendizaje priorizamos?</small></span>
+        </button>
+
+        <button class="map-node node-area" type="button" data-topic="area" aria-haspopup="dialog">
+          <span class="node-index">Territorio</span>
+          <span class="node-dot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 6 5-2 6 2 5-2v14l-5 2-6-2-5 2V6Z"/><path d="M9 4v14m6-12v14"/></svg></span>
+          <span class="node-copy"><strong>Inglés y STEM</strong><small>¿Cómo cobra vida?</small></span>
+        </button>
+
+        <button class="map-node node-time" type="button" data-topic="time" aria-haspopup="dialog">
+          <span class="node-index">Conexión clave</span>
+          <span class="node-dot pulse"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <span class="node-copy"><strong>Tiempo efectivo</strong><small>¿Qué protege esta ruta?</small></span>
+        </button>
+
+        <div class="map-legend" aria-hidden="true">
+          <span>Base normativa</span><i></i><span>Decisión pedagógica</span>
+        </div>
+      </div>
+      <p class="map-hint"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11V7a2 2 0 0 1 4 0v4-2a2 2 0 0 1 4 0v3-1a2 2 0 0 1 4 0v4c0 3.5-2.5 6-6 6h-2c-2.5 0-4-1-5.5-3L4 13.5A2 2 0 0 1 7 11l2 2v-2Z"/></svg> Selecciona un nodo para abrir su ficha de campo.</p>
+    </section>
+
+    <section class="connection-section" id="conexion" aria-labelledby="connection-title">
+      <div class="connection-copy">
+        <p class="coordinate dark">Lectura del terreno</p>
+        <h2 id="connection-title">Una ruta, cuatro escalas de decisión</h2>
+        <p>Los referentes no compiten ni se reemplazan. Cada uno resuelve una escala distinta de la planeación.</p>
+      </div>
+      <div class="scale-diagram" aria-label="Relación entre los referentes curriculares">
+        <button type="button" data-topic="legal"><span>Marco común</span><strong>Ley</strong><small>Define las áreas obligatorias</small></button>
+        <span class="scale-arrow" aria-hidden="true">→</span>
+        <button type="button" data-topic="guides"><span>Sentido</span><strong>Lineamientos</strong><small>Orientan el enfoque pedagógico</small></button>
+        <span class="scale-arrow" aria-hidden="true">→</span>
+        <button type="button" data-topic="ebc"><span>Horizonte</span><strong>EBC</strong><small>Fijan metas por grupos de grados</small></button>
+        <span class="scale-arrow" aria-hidden="true">→</span>
+        <button type="button" data-topic="dba"><span>Trayecto</span><strong>DBA</strong><small>Proponen aprendizajes por grado</small></button>
+      </div>
+      <blockquote>La coherencia no significa rigidez: significa saber qué referente orienta cada decisión.</blockquote>
+    </section>
+
+    <section class="challenge" id="desafio" aria-labelledby="challenge-title">
+      <div class="challenge-header">
+        <svg class="challenge-compass" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="42"/><path d="m62 35-8 19-19 8 8-19 19-8Z"/><circle cx="50" cy="50" r="3"/></svg>
+        <div>
+          <p class="coordinate">Decisión de ruta</p>
+          <h2 id="challenge-title">Una dificultad cambia el plan</h2>
+        </div>
+      </div>
+      <p class="scenario">Una parte de tus estudiantes tiene dificultades con una habilidad de años anteriores y tu planeación de periodo está retrasada. ¿Cuál decisión aprovecha la flexibilidad pedagógica y protege el tiempo de aprendizaje?</p>
+      <div class="answers" role="group" aria-labelledby="challenge-title">
+        <button type="button" data-answer="a"><span>A</span>Continuar rápidamente con todos los temas de la malla y reducir el tiempo de las actividades para lograr cubrir la planeación prevista.</button>
+        <button type="button" data-answer="b"><span>B</span>Asignar una guía de teoría para memorizar en casa y conservar el tiempo de clase para avanzar con los contenidos del periodo.</button>
+        <button type="button" data-answer="c"><span>C</span>Priorizar esa habilidad mediante la flexibilidad de los DBA y diseñar una secuencia de indagación activa para fortalecerla.</button>
+      </div>
+      <div class="feedback" id="feedback" hidden tabindex="-1" aria-live="polite"></div>
+    </section>
+
+    <section class="closing" id="cierre" aria-labelledby="closing-title">
+      <div class="closing-shape" aria-hidden="true"></div>
+      <div class="closing-copy">
+        <p class="coordinate dark">Tu próxima coordenada</p>
+        <h2 id="closing-title">Haz visible el cambio en tu pensamiento</h2>
+        <p>Lleva esta rutina a tu <strong>Bitácora de Metacognición Digital en Moodle</strong>. Allí sí quedará registrada para volver a ella durante tu proceso.</p>
+      </div>
+      <div class="thinking-routine">
+        <div><span>Antes pensaba…</span><p>que los referentes del marco normativo nacional eran…</p></div>
+        <svg viewBox="0 0 80 28" aria-hidden="true"><path d="M2 14h72m-9-9 9 9-9 9"/></svg>
+        <div><span>Ahora sé…</span><p>que dominar estos referentes me ayuda a proteger el tiempo efectivo porque…</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="docs/exclombia-blanco.png" alt="Enseña por Colombia">
+    <p>Una planeación coherente protege el derecho a aprender.</p>
+    <button type="button" id="reset-progress">Reiniciar exploración</button>
+  </footer>
+
+  <dialog class="field-dialog" id="topic-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-shell">
+      <header>
+        <div><span id="dialog-coordinate"></span><h2 id="dialog-title"></h2></div>
+        <button class="dialog-close" type="button" aria-label="Cerrar ficha">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </header>
+      <div class="dialog-progress"><span id="dialog-progress"></span></div>
+      <div class="dialog-content" id="dialog-content"></div>
+      <footer>
+        <button class="dialog-prev" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg> Anterior</button>
+        <span id="dialog-position"></span>
+        <button class="dialog-next" type="button">Siguiente <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+      </footer>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>

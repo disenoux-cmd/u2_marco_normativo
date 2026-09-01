@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-31T23:28:17-05:00",
+  "title": "Design System: Planear con coherencia",
+  "extensions": {
+    "colorMeta": {
+      "forest": {
+        "role": "primary",
+        "displayName": "Verde selva",
+        "canonical": "#123b32",
+        "tonalRamp": ["#071a16", "#0c2a23", "#123b32", "#225f50", "#4d7d6f", "#7fa498", "#b8cec7", "#edf4f1"]
+      },
+      "forest-deep": {
+        "role": "primary",
+        "displayName": "Verde selva profundo",
+        "canonical": "#092821",
+        "tonalRamp": ["#041611", "#092821", "#123b32", "#28594c", "#50796e", "#80a097", "#b8cbc5", "#eef4f2"]
+      },
+      "forest-soft": {
+        "role": "primary",
+        "displayName": "Verde de relieve",
+        "canonical": "#225f50",
+        "tonalRamp": ["#09241d", "#123d32", "#225f50", "#3d7968", "#639587", "#91b2a8", "#c3d6d0", "#eff6f4"]
+      },
+      "sun": {
+        "role": "secondary",
+        "displayName": "Amarillo solar",
+        "canonical": "#ffc400",
+        "tonalRamp": ["#4a3700", "#765900", "#a77e00", "#d8a500", "#ffc400", "#ffd94d", "#ffe994", "#fff8dc"]
+      },
+      "sun-pale": {
+        "role": "secondary",
+        "displayName": "Amarillo solar pálido",
+        "canonical": "#ffe994",
+        "tonalRamp": ["#473d13", "#6f6024", "#998638", "#c5ae53", "#e2cc73", "#ffe994", "#fff1ba", "#fff9e5"]
+      },
+      "mineral": {
+        "role": "neutral",
+        "displayName": "Papel mineral",
+        "canonical": "#f1efe6",
+        "tonalRamp": ["#25241f", "#46443d", "#68665d", "#8c8980", "#b0ada4", "#d2d0c7", "#f1efe6", "#faf9f4"]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Papel claro",
+        "canonical": "#fbfaf5",
+        "tonalRamp": ["#272620", "#494841", "#6d6b63", "#929088", "#b8b6ae", "#dddbd4", "#f2f0ea", "#fbfaf5"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Tinta vegetal",
+        "canonical": "#172621",
+        "tonalRamp": ["#0b1411", "#172621", "#2e4039", "#4b5e57", "#6e817a", "#98a9a3", "#c7d2ce", "#f0f4f2"]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Gris musgo",
+        "canonical": "#58665f",
+        "tonalRamp": ["#151c18", "#2c3732", "#46534d", "#58665f", "#7a8881", "#a1ada7", "#ccd4d0", "#f2f5f3"]
+      },
+      "orange-route": {
+        "role": "tertiary",
+        "displayName": "Naranja de bifurcación",
+        "canonical": "#e76f32",
+        "tonalRamp": ["#451806", "#74270b", "#a43d17", "#cc5524", "#e76f32", "#ef986a", "#f6c3a7", "#fceee6"]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Blanco",
+        "canonical": "#ffffff",
+        "tonalRamp": ["#262626", "#484848", "#6c6c6c", "#919191", "#b7b7b7", "#dcdcdc", "#f1f1f1", "#ffffff"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Título del primer viewport y su énfasis solar." },
+      "headline": { "displayName": "Headline", "purpose": "Títulos editoriales de sección y desafío." },
+      "title": { "displayName": "Title", "purpose": "Nodos, subtítulos, cifras y acciones." },
+      "body": { "displayName": "Body", "purpose": "Explicaciones pedagógicas y contenido normativo legible." },
+      "label": { "displayName": "Label", "purpose": "Coordenadas, capas, índices y metadatos de orientación." }
+    },
+    "shadows": [
+      { "name": "node-elevated", "value": "0 8px 24px rgba(9,40,33,.2)", "purpose": "Separar los hotspots circulares del papel mineral." },
+      { "name": "marker-point", "value": "0 6px 18px rgba(0,0,0,.28)", "purpose": "Reforzar pequeños marcadores sobre el mapa oscuro." },
+      { "name": "dialog-float", "value": "0 24px 80px rgba(4,24,19,.45)", "purpose": "Elevar la ficha modal como plano de lectura activo." }
+    ],
+    "motion": [
+      { "name": "state-fast", "value": "200ms ease", "purpose": "Hover de color, desplazamiento y escala en controles." },
+      { "name": "progress-out", "value": "350ms-450ms ease-out", "purpose": "Actualización de barras de progreso global y modal." },
+      { "name": "route-draw", "value": "2800ms ease-out", "purpose": "Dibujar la ruta punteada del primer viewport una sola vez." },
+      { "name": "node-pulse", "value": "2200ms infinite", "purpose": "Señalar la conexión clave de tiempo efectivo." },
+      { "name": "reduced-motion", "value": "0.01ms; 1 iteration", "purpose": "Neutralizar animaciones y transiciones cuando la persona solicita menos movimiento." }
+    ],
+    "breakpoints": [
+      { "name": "stacked-route", "value": "960px" },
+      { "name": "compact-mobile", "value": "640px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Acción solar de entrada que inicia el recorrido curricular.",
+      "html": "<a class=\"ds-primary-action\" href=\"#\">Trazar mi ruta <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-primary-action { display:inline-flex; align-items:center; justify-content:center; gap:.8rem; min-height:52px; padding:.85rem 1.2rem .85rem 1.35rem; color:var(--forest-deep,#092821); background:var(--sun,#ffc400); border-radius:.35rem; font-family:'Familjen Grotesk',sans-serif; font-weight:700; text-decoration:none; transition:background-color .2s,color .2s,transform .2s; } .ds-primary-action svg { width:22px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; transition:transform .2s; } .ds-primary-action:hover { background:#ffdb53; transform:translateY(-2px); } .ds-primary-action:hover svg { transform:translateX(4px); } .ds-primary-action:focus-visible { outline:3px solid var(--sun,#ffc400); outline-offset:4px; }"
+    },
+    {
+      "name": "Secondary Action",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Acción oscura para transferir la rutina a Moodle.",
+      "html": "<button class=\"ds-secondary-action\" type=\"button\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"8\" y=\"8\" width=\"11\" height=\"11\" rx=\"1\"/><path d=\"M16 8V5H5v11h3\"/></svg>Copiar la rutina para Moodle</button>",
+      "css": ".ds-secondary-action { display:inline-flex; align-items:center; justify-content:center; gap:.8rem; min-height:52px; padding:.8rem 1.1rem; color:#fff; background:var(--forest-deep,#092821); border:0; border-radius:.35rem; font-family:'Familjen Grotesk',sans-serif; font-weight:700; cursor:pointer; transition:background-color .2s,color .2s,transform .2s; } .ds-secondary-action svg { width:22px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; } .ds-secondary-action:hover { background:var(--forest-soft,#225f50); transform:translateY(-2px); } .ds-secondary-action:focus-visible { outline:3px solid var(--sun,#ffc400); outline-offset:4px; }"
+    },
+    {
+      "name": "Curriculum Map Node",
+      "kind": "custom",
+      "refersTo": "map-node",
+      "description": "Hotspot cartográfico que combina capa, icono, referente y pregunta guía.",
+      "html": "<button class=\"ds-map-node\" type=\"button\"><span class=\"ds-node-dot\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"8\"/><path d=\"m15.5 8.5-2 5-5 2 2-5 5-2Z\"/></svg></span><span class=\"ds-node-copy\"><span>Orientación</span><strong>Lineamientos</strong><small>¿Hacia dónde miramos?</small></span></button>",
+      "css": ".ds-map-node { display:grid; grid-template-columns:58px minmax(130px,auto); gap:0 .85rem; padding:0; color:var(--ink,#172621); border:0; background:transparent; text-align:left; cursor:pointer; } .ds-node-dot { grid-row:1/4; display:grid; place-items:center; width:58px; height:58px; color:#fff; background:var(--forest,#123b32); border:6px solid var(--mineral,#f1efe6); border-radius:50%; box-shadow:0 8px 24px rgba(9,40,33,.2); transition:transform .2s,background-color .2s; } .ds-node-dot svg { width:27px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; } .ds-node-copy { display:flex; flex-direction:column; line-height:1.25; } .ds-node-copy>span { color:var(--muted,#58665f); font-family:'Familjen Grotesk',sans-serif; font-size:.68rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; } .ds-node-copy strong { font-family:'Familjen Grotesk',sans-serif; font-size:1.2rem; } .ds-node-copy small { margin-top:.2rem; color:var(--muted,#58665f); font-size:.8rem; } .ds-map-node:hover .ds-node-dot,.ds-map-node:focus-visible .ds-node-dot { transform:scale(1.1); background:var(--forest-soft,#225f50); } .ds-map-node:focus-visible { outline:3px solid var(--sun,#ffc400); outline-offset:4px; }"
+    },
+    {
+      "name": "Discipline Tab",
+      "kind": "chip",
+      "refersTo": "tab-selected",
+      "description": "Selector compacto de territorio disciplinar dentro de la ficha.",
+      "html": "<div class=\"ds-tabs\" role=\"tablist\" aria-label=\"Expectativas por área\"><button type=\"button\" role=\"tab\" aria-selected=\"true\">Inglés</button><button type=\"button\" role=\"tab\" aria-selected=\"false\">STEM</button></div>",
+      "css": ".ds-tabs { display:flex; gap:.5rem; } .ds-tabs button { padding:.6rem 1rem; color:var(--ink,#172621); border:1px solid #afbbb4; border-radius:99px; background:transparent; font:inherit; cursor:pointer; } .ds-tabs button[aria-selected='true'] { color:#fff; border-color:var(--forest,#123b32); background:var(--forest,#123b32); } .ds-tabs button:hover { border-color:var(--forest-soft,#225f50); } .ds-tabs button:focus-visible { outline:3px solid var(--sun,#ffc400); outline-offset:4px; }"
+    },
+    {
+      "name": "Challenge Answer",
+      "kind": "button",
+      "description": "Respuesta de decisión pedagógica con estados correcto e incorrecto explícitos.",
+      "html": "<button class=\"ds-answer ds-answer-correct\" type=\"button\"><span>C</span>Priorizar el aprendizaje estructurante mediante la flexibilidad de los DBA.</button>",
+      "css": ".ds-answer { display:grid; grid-template-columns:42px 1fr; align-items:center; gap:1rem; min-height:78px; padding:.9rem 1.25rem; color:#eaf1ee; border:1px solid #42685d; border-radius:.35rem; background:var(--forest-deep,#092821); text-align:left; font:inherit; cursor:pointer; transition:border-color .2s,background-color .2s,transform .2s; } .ds-answer span { display:grid; place-items:center; width:36px; height:36px; color:var(--sun,#ffc400); border:1px solid #6d887f; border-radius:50%; font-family:'Familjen Grotesk',sans-serif; font-weight:700; } .ds-answer:hover { border-color:var(--sun,#ffc400); background:#163b31; transform:translateX(4px); } .ds-answer-correct { border-color:var(--sun,#ffc400); background:#294632; } .ds-answer:focus-visible { outline:3px solid var(--sun,#ffc400); outline-offset:4px; }"
+    },
+    {
+      "name": "Field Note",
+      "kind": "card",
+      "description": "Nota pedagógica amarilla con esquina recortada, usada para traducir contenido a práctica.",
+      "html": "<div class=\"ds-field-note\"><strong>Lectura para tu práctica:</strong> la ruta nacional gana sentido al orientar una decisión concreta.</div>",
+      "css": ".ds-field-note { max-width:72ch; padding:1.4rem 1.5rem; color:var(--forest-deep,#092821); background:var(--sun-pale,#ffe994); clip-path:polygon(0 0,98% 0,100% 16px,100% 100%,0 100%); font-family:'Atkinson Hyperlegible',sans-serif; line-height:1.6; } .ds-field-note strong { font-family:'Familjen Grotesk',sans-serif; }"
+    },
+    {
+      "name": "Journey Progress",
+      "kind": "nav",
+      "description": "Estado persistente de las seis capas exploradas.",
+      "html": "<div class=\"ds-journey\"><span>Ruta explorada</span><strong>3 de 6 capas</strong><i aria-hidden=\"true\"><b></b></i></div>",
+      "css": ".ds-journey { display:grid; grid-template-columns:auto auto; align-items:center; gap:0 1rem; min-width:220px; color:#fff; font-family:'Atkinson Hyperlegible',sans-serif; font-size:.82rem; } .ds-journey>span { color:#cbdad5; } .ds-journey>strong { text-align:right; } .ds-journey>i { grid-column:1/-1; display:block; height:2px; margin-top:.45rem; background:rgba(255,255,255,.25); } .ds-journey>i b { display:block; width:50%; height:100%; background:var(--sun,#ffc400); transform-origin:left; transition:transform .45s ease-out; }"
+    },
+    {
+      "name": "Field Dialog",
+      "kind": "custom",
+      "description": "Plano modal de lectura con cabecera verde, progreso solar y navegación persistente.",
+      "html": "<section class=\"ds-dialog\" role=\"dialog\" aria-labelledby=\"ds-dialog-title\"><header><div><span>Capa de horizonte · Metas de calidad</span><h2 id=\"ds-dialog-title\">EBC: saber y saber hacer en contexto</h2></div><button type=\"button\" aria-label=\"Cerrar ficha\">×</button></header><i aria-hidden=\"true\"><b></b></i><div class=\"ds-dialog-body\"><h3>Un horizonte común de calidad</h3><p>La ficha concentra la lectura normativa sin abandonar la orientación cartográfica.</p></div><footer><button type=\"button\" disabled>Anterior</button><span>3 de 6</span><button type=\"button\">Siguiente</button></footer></section>",
+      "css": ".ds-dialog { overflow:hidden; width:min(680px,100%); color:var(--ink,#172621); border-radius:.45rem; background:var(--paper,#fbfaf5); box-shadow:0 24px 80px rgba(4,24,19,.45); font-family:'Atkinson Hyperlegible',sans-serif; } .ds-dialog>header { display:flex; justify-content:space-between; gap:2rem; padding:2rem 2.3rem 1.4rem; color:#fff; background:var(--forest,#123b32); } .ds-dialog>header span { color:var(--sun-pale,#ffe994); font-family:'Familjen Grotesk',sans-serif; font-size:.7rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; } .ds-dialog h2,.ds-dialog h3 { margin:.5rem 0 0; font-family:'Familjen Grotesk',sans-serif; line-height:1.02; } .ds-dialog h2 { font-size:2rem; } .ds-dialog>header button { width:44px; height:44px; color:#fff; border:1px solid #608178; border-radius:50%; background:transparent; font-size:1.5rem; cursor:pointer; } .ds-dialog>header button:hover { color:var(--forest-deep,#092821); background:var(--sun,#ffc400); } .ds-dialog>i { display:block; height:4px; background:#d8ddd6; } .ds-dialog>i b { display:block; width:50%; height:100%; background:var(--sun,#ffc400); } .ds-dialog-body { padding:2rem 2.3rem 2.5rem; line-height:1.6; } .ds-dialog>footer { display:flex; align-items:center; justify-content:space-between; padding:1rem 2.3rem; border-top:1px solid #d7dcd5; background:#f2f1ea; } .ds-dialog>footer button { color:var(--forest,#123b32); border:0; background:transparent; font-weight:700; cursor:pointer; } .ds-dialog>footer button:disabled { opacity:.35; cursor:not-allowed; } .ds-dialog button:focus-visible { outline:3px solid var(--sun,#ffc400); outline-offset:4px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Cartografía curricular estratificada",
+    "overview": "El mundo visual convierte el marco curricular en un territorio colombiano contemporáneo: verde selva como campo de orientación, amarillo solar como señal de avance y papel mineral como superficie de lectura. Curvas topográficas, rutas punteadas, coordenadas, brújulas y nodos conectados explican relaciones antes de abrir el detalle; la interfaz evita presentar la normativa como una cuadrícula de tarjetas aisladas.\n\nLa composición alterna amplitud editorial y controles táctiles. El primer viewport ancla título, explicación y acción a la izquierda, mientras un relieve curricular ocupa la derecha; después, la historia recorre seis capas, sintetiza cuatro escalas de decisión, plantea un caso y termina en una rutina para la bitácora. La densidad aumenta dentro de la ficha modal, pero el resto del recorrido conserva grandes campos de color y pausas verticales.",
+    "keyCharacteristics": [
+      "Cartografía colombiana abstracta, construida con líneas, nodos, coordenadas y relieve en lugar de fotografía.",
+      "Contraste de verde profundo, amarillo solar y superficies minerales cálidas.",
+      "Jerarquía editorial grande para orientar y controles compactos para explorar.",
+      "Progreso visible, retroalimentación inmediata y cierre de transferencia hacia Moodle.",
+      "Forma estratificada y conectada; nunca una colección de normas visualmente independientes."
+    ],
+    "rules": [
+      { "name": "The Solar Signal Rule", "body": "El amarillo solar se reserva para dirección, progreso, foco y resolución; no funciona como relleno decorativo general.", "section": "colors" },
+      { "name": "The Layered Terrain Rule", "body": "Los cambios de sección se expresan con campos verde, mineral, papel y amarillo; la jerarquía depende primero de estratos tonales y después de bordes o sombras.", "section": "colors" },
+      { "name": "The Two-Voice Rule", "body": "Familjen Grotesk orienta y rotula; Atkinson Hyperlegible explica. No intercambiar sus funciones en contenido nuevo.", "section": "typography" },
+      { "name": "The Compressed Heading Rule", "body": "Los encabezados usan interlínea cerrada y espaciado negativo; los párrafos recuperan aire mediante interlínea generosa y ancho de lectura controlado.", "section": "typography" },
+      { "name": "The Connected-Strata Rule", "body": "Toda extensión debe conservar una lectura de base, orientación, meta, trayecto, territorio y conexión; las relaciones se muestran espacialmente antes de explicarse en detalle.", "section": "layout" },
+      { "name": "The First-Viewport Rule", "body": "En escritorio, la orientación verbal permanece a la izquierda y el relieve a la derecha; en pantallas estrechas el relieve puede convertirse en fondo, pero nunca desplazar la acción inicial.", "section": "layout" },
+      { "name": "The Flat-Terrain Rule", "body": "Las secciones y controles rectangulares permanecen planos en reposo; la sombra se reserva para nodos, marcadores y diálogo.", "section": "elevation" },
+      { "name": "The Field-Tool Rule", "body": "Los controles deben sentirse como instrumentos de cartografía: compactos, precisos y táctiles; evitar tarjetas genéricas con radios grandes y sombras suaves.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do construir nuevas vistas como estratos conectados mediante rutas, nodos, escalas, coordenadas o contornos.",
+      "Do reservar el amarillo solar para acciones, avance, foco, conexiones clave y resolución.",
+      "Do mantener Familjen Grotesk en orientación y Atkinson Hyperlegible en explicación.",
+      "Do preservar el logotipo blanco sobre fondos verdes oscuros y su texto alternativo institucional.",
+      "Do mantener operabilidad por teclado, foco de alto contraste, reducción de movimiento y señales que no dependan solo del color.",
+      "Do convertir la cartografía horizontal en una ruta vertical legible por debajo de 960px."
+    ],
+    "donts": [
+      "Don't presentar los referentes como una cuadrícula uniforme de tarjetas educativas aisladas.",
+      "Don't usar amarillo, naranja o sombras como decoración sin función de navegación, estado o profundidad.",
+      "Don't introducir inputs o áreas de texto: la transferencia ocurre mediante la rutina copiable hacia Moodle.",
+      "Don't reemplazar los contornos abstractos por fotografías genéricas o ilustraciones sin relación cartográfica.",
+      "Don't ocultar el progreso, el feedback o el estado visitado detrás de una señal exclusivamente cromática.",
+      "Don't añadir radios grandes y superficies flotantes que conviertan los instrumentos de campo en componentes de aplicación genéricos."
+    ]
+  }
+}
