@@ -101,13 +101,13 @@ components:
 
 El mundo visual convierte el marco curricular en un territorio colombiano contemporáneo: verde selva como campo de orientación, amarillo solar como señal de avance y papel mineral como superficie de lectura. Curvas topográficas, rutas punteadas, coordenadas, brújulas y nodos conectados explican relaciones antes de abrir el detalle; la interfaz evita presentar la normativa como una cuadrícula de tarjetas aisladas.
 
-La composición alterna amplitud editorial y controles táctiles. El primer viewport ancla título, explicación y acción a la izquierda, mientras un relieve curricular ocupa la derecha; después, la historia recorre seis capas, sintetiza cuatro escalas de decisión, plantea un caso y termina en una rutina para la bitácora. La densidad aumenta dentro de la ficha modal, pero el resto del recorrido conserva grandes campos de color y pausas verticales.
+La composición alterna amplitud editorial y controles táctiles. El primer viewport ancla título, explicación y acción a la izquierda, mientras un relieve curricular ocupa la derecha; después, la historia recorre seis capas, sintetiza cuatro escalas de decisión, plantea un caso y termina en una rutina de reflexión y aplicación en el aula. La densidad aumenta dentro de la ficha modal, pero el resto del recorrido conserva grandes campos de color y pausas verticales.
 
 **Key Characteristics:**
 - Cartografía colombiana abstracta, construida con líneas, nodos, coordenadas y relieve en lugar de fotografía.
 - Contraste de verde profundo, amarillo solar y superficies minerales cálidas.
 - Jerarquía editorial grande para orientar y controles compactos para explorar.
-- Progreso visible, retroalimentación inmediata y cierre de transferencia hacia Moodle.
+- Progreso visible, retroalimentación inmediata y cierre de reflexión y aplicación pedagógica.
 - Forma estratificada y conectada; nunca una colección de normas visualmente independientes.
 
 ## Colors
@@ -240,7 +240,7 @@ La ruta del hero se dibuja durante `2.8s`; el nodo de tiempo emite un pulso de `
 ### Don't:
 - **Don't** presentar los referentes como una cuadrícula uniforme de tarjetas educativas aisladas.
 - **Don't** usar amarillo, naranja o sombras como decoración sin función de navegación, estado o profundidad.
-- **Don't** introducir inputs o áreas de texto: la transferencia ocurre mediante la rutina copiable hacia Moodle.
+- **Don't** introducir inputs o áreas de texto: la reflexión se propone mediante una rutina breve que cada Eco puede conectar con su práctica de aula.
 - **Don't** reemplazar los contornos abstractos por fotografías genéricas o ilustraciones sin relación cartográfica.
 - **Don't** ocultar el progreso, el feedback o el estado visitado detrás de una señal exclusivamente cromática.
 - **Don't** añadir radios grandes y superficies flotantes que conviertan los instrumentos de campo en componentes de aplicación genéricos.

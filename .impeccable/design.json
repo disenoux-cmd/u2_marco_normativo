@@ -108,8 +108,8 @@
       "name": "Secondary Action",
       "kind": "button",
       "refersTo": "button-secondary",
-      "description": "Acción oscura para transferir la rutina a Moodle.",
-      "html": "<button class=\"ds-secondary-action\" type=\"button\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"8\" y=\"8\" width=\"11\" height=\"11\" rx=\"1\"/><path d=\"M16 8V5H5v11h3\"/></svg>Copiar la rutina para Moodle</button>",
+      "description": "Acción oscura para proyectar una aplicación concreta en el aula.",
+      "html": "<button class=\"ds-secondary-action\" type=\"button\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"8\" y=\"8\" width=\"11\" height=\"11\" rx=\"1\"/><path d=\"M16 8V5H5v11h3\"/></svg>Aplicar en mi aula</button>",
       "css": ".ds-secondary-action { display:inline-flex; align-items:center; justify-content:center; gap:.8rem; min-height:52px; padding:.8rem 1.1rem; color:#fff; background:var(--forest-deep,#092821); border:0; border-radius:.35rem; font-family:'Familjen Grotesk',sans-serif; font-weight:700; cursor:pointer; transition:background-color .2s,color .2s,transform .2s; } .ds-secondary-action svg { width:22px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; } .ds-secondary-action:hover { background:var(--forest-soft,#225f50); transform:translateY(-2px); } .ds-secondary-action:focus-visible { outline:3px solid var(--sun,#ffc400); outline-offset:4px; }"
     },
     {
@@ -159,12 +159,12 @@
   ],
   "narrative": {
     "northStar": "Cartografía curricular estratificada",
-    "overview": "El mundo visual convierte el marco curricular en un territorio colombiano contemporáneo: verde selva como campo de orientación, amarillo solar como señal de avance y papel mineral como superficie de lectura. Curvas topográficas, rutas punteadas, coordenadas, brújulas y nodos conectados explican relaciones antes de abrir el detalle; la interfaz evita presentar la normativa como una cuadrícula de tarjetas aisladas.\n\nLa composición alterna amplitud editorial y controles táctiles. El primer viewport ancla título, explicación y acción a la izquierda, mientras un relieve curricular ocupa la derecha; después, la historia recorre seis capas, sintetiza cuatro escalas de decisión, plantea un caso y termina en una rutina para la bitácora. La densidad aumenta dentro de la ficha modal, pero el resto del recorrido conserva grandes campos de color y pausas verticales.",
+    "overview": "El mundo visual convierte el marco curricular en un territorio colombiano contemporáneo: verde selva como campo de orientación, amarillo solar como señal de avance y papel mineral como superficie de lectura. Curvas topográficas, rutas punteadas, coordenadas, brújulas y nodos conectados explican relaciones antes de abrir el detalle; la interfaz evita presentar la normativa como una cuadrícula de tarjetas aisladas.\n\nLa composición alterna amplitud editorial y controles táctiles. El primer viewport ancla título, explicación y acción a la izquierda, mientras un relieve curricular ocupa la derecha; después, la historia recorre seis capas, sintetiza cuatro escalas de decisión, plantea un caso y termina en una rutina de reflexión y aplicación en el aula. La densidad aumenta dentro de la ficha modal, pero el resto del recorrido conserva grandes campos de color y pausas verticales.",
     "keyCharacteristics": [
       "Cartografía colombiana abstracta, construida con líneas, nodos, coordenadas y relieve en lugar de fotografía.",
       "Contraste de verde profundo, amarillo solar y superficies minerales cálidas.",
       "Jerarquía editorial grande para orientar y controles compactos para explorar.",
-      "Progreso visible, retroalimentación inmediata y cierre de transferencia hacia Moodle.",
+      "Progreso visible, retroalimentación inmediata y cierre de reflexión y aplicación pedagógica.",
       "Forma estratificada y conectada; nunca una colección de normas visualmente independientes."
     ],
     "rules": [
@@ -188,7 +188,7 @@
     "donts": [
       "Don't presentar los referentes como una cuadrícula uniforme de tarjetas educativas aisladas.",
       "Don't usar amarillo, naranja o sombras como decoración sin función de navegación, estado o profundidad.",
-      "Don't introducir inputs o áreas de texto: la transferencia ocurre mediante la rutina copiable hacia Moodle.",
+      "Don't introducir inputs o áreas de texto: la reflexión se propone mediante una rutina breve que cada Eco puede conectar con su práctica de aula.",
       "Don't reemplazar los contornos abstractos por fotografías genéricas o ilustraciones sin relación cartográfica.",
       "Don't ocultar el progreso, el feedback o el estado visitado detrás de una señal exclusivamente cromática.",
       "Don't añadir radios grandes y superficies flotantes que conviertan los instrumentos de campo en componentes de aplicación genéricos."

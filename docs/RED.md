@@ -136,9 +136,9 @@
 
 ---
 
-### 🧩 Cierre Metacognitivo: Rutina de Pensamiento Visible (Harvard \- Project Zero)
+### 🧩 Cierre reflexivo: Rutina de Pensamiento Visible (Harvard \- Project Zero)
 
-El recurso cierra invitando al usuario a registrar su aprendizaje en su **Bitácora de Metacognición Digital** de Moodle a partir de la siguiente rutina:
+El recurso cierra invitando al usuario a reflexionar sobre lo aprendido y a pensar en una decisión concreta para aplicar estos referentes en su próxima planeación de clase, a partir de la siguiente rutina:
 
 > **Rutina: "Antes pensaba... Ahora sé"**  
 > 
@@ -153,4 +153,3 @@ El recurso cierra invitando al usuario a registrar su aprendizaje en su **Bitác
 1. **Montaje Modular:** Usar ventanas emergentes (Pop-ups) con diseños de pestañas para que el usuario pueda navegar cada hotspot con limpieza visual y sin perder la noción del mapa conceptual completo.  
 2. **Jerarquía de Información:** Aplicar los colores oficiales de Enseña por Colombia e Instituto LIDERA. Utilizar un tamaño destacado para los encabezados y un diseño limpio con tipografías de alta legibilidad, sirviendo como ejemplo directo de la técnica de "Uso Efectivo del Tablero" (contraste, color, divisiones y organización clara).  
 3. **Transiciones Dinámicas:** Utilizar animaciones de entrada interactivas tipo "fade" o "desplazamiento suave" para guiar la vista del Eco de manera secuencial a lo largo del mapa interactivo.
-

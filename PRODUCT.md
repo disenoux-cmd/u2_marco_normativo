@@ -26,7 +26,7 @@ El recurso convierte el marco normativo en una ruta curricular explorable que co
 
 ## Operating Context
 
-El RED forma parte de un curso autodirigido en Moodle. La exploración debe ser autosuficiente, ofrecer retroalimentación inmediata y cerrar remitiendo a la Bitácora de Metacognición Digital de Moodle.
+El RED forma parte de un curso autodirigido en Moodle. La exploración debe ser autosuficiente, ofrecer retroalimentación inmediata y cerrar invitando a reflexionar sobre lo aprendido y a aplicarlo en la planeación de clase.
 
 ## Capabilities and Constraints
 
